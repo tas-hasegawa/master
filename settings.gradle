@@ -1,0 +1,3 @@
+rootProject.name = 'app'
+
+includeFlat "${rootProject.name}-common", "${rootProject.name}-job", "${rootProject.name}-web", "${rootProject.name}-test"
