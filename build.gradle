@@ -1,5 +1,7 @@
 apply plugin: 'java'
 
+def defaultEncoding = 'UTF-8'
+
 allprojects {
     apply plugin: 'java'
     sourceCompatibility = '1.8'
@@ -7,6 +9,10 @@ allprojects {
 
     repositories {
         mavenCentral()
+    }
+
+    compileJava {
+        options.encoding = defaultEncoding
     }
 }
 
